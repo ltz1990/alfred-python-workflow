@@ -55,6 +55,7 @@
 				<string>wait</string>
 				<key>script</key>
 				<string>import sys
+import math
 
 def out(title,subtitle) :
 	xml = "&lt;items&gt;&lt;item uid=\"test\" arg=\""+str(title)+"\"&gt;&lt;title&gt;"+str(title)+"&lt;/title&gt;&lt;subtitle&gt;"+str(subtitle)+"&lt;/subtitle&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;&lt;/items&gt;"
@@ -66,7 +67,7 @@ try:
 	result = eval(query)
 	out(result,query)
 except:
-	out("Python","Parsing error..")
+	out("Python",query)
 
 </string>
 				<key>scriptargtype</key>
