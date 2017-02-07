@@ -55,7 +55,7 @@
 				<string>wait</string>
 				<key>script</key>
 				<string>import sys
-import math
+from math import *
 
 def out(title,subtitle) :
 	xml = "&lt;items&gt;&lt;item uid=\"test\" arg=\""+str(title)+"\"&gt;&lt;title&gt;"+str(title)+"&lt;/title&gt;&lt;subtitle&gt;"+str(subtitle)+"&lt;/subtitle&gt;&lt;icon&gt;icon.png&lt;/icon&gt;&lt;/item&gt;&lt;/items&gt;"
